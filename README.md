@@ -1,3 +1,3 @@
 # Library
 
-Projecto to create a library from TOP.
+Project to create a library from TOP.
