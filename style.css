@@ -1,0 +1,53 @@
+html {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 20vh;
+}
+
+.title, .add-button, .log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* New book button*/
+
+.new-book {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: paleturquoise;
+    font-size: 40px;
+    color: white;
+}
+
+/*Library log section*/
+
+.log > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: solid black 2px;
+    width: 200px;
+    padding: 10px;
+}
+
+.library-log {
+    align-self: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.total-books, .total-read, .total-unread {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
