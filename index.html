@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="library.js"></script>
+    
 </head>
 <body>
+
     <div class="header">
-        <div class="title">
+        <div class="intro">
             <h1>Welcome to my Library</h1>
         </div>
 
         <div class="add-button">
-            <button class="new-book">+</button>
+            <button id="add-button">+</button>
         </div>
 
         <div class="log">
@@ -23,25 +24,46 @@
                 <div class="library-log">Library log</div>
                 <div class="total-books">
                     <div>Total book count:</div>
-                    <span id="book-count">1</span>
+                    <span id = "book-count"></span>
                 </div>
                 <div class="total-read">
                     <div>Books read:</div>
-                    <span id="books-read">1</span>
+                    <span id = "books-read"></span>
                 </div>
                 <div class="total-unread">
                     <div>Books not read:</div>
-                    <span id="books-unread">0</span>
+                    <span id = "books-not-read"></span>
                 </div>
             </div>
             
         </div>
     </div>
+
+    <form id="new-book-form">
+        <div>
+            <input type="text" name="book" id="title" placeholder="Title" required>
+        </div>
+        <div>
+            <input type="text" name="author" id="author" placeholder="Author" required>
+        </div>
+        <div>
+            <input type="number" name="pages" id="pages" placeholder="Number of pages" required>
+        </div>
+        <div id="checkbox">
+            <label>Read: </label><input type="checkbox" id="read" name="read">
+        </div>
+        <div class="btn-container">
+            <button type ="submit" id="save">Save </button>
+            <button id="close">Close</button>
+        </div>
+    </form>
     
-    <div class="library">
+    <div id = "library">
 
     </div>
 
+    
 
+    <script src="library.js"></script>
 </body>
 </html>

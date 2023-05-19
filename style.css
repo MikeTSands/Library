@@ -9,7 +9,7 @@ html {
     height: 20vh;
 }
 
-.title, .add-button, .log {
+.intro, .add-button, .log {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,11 +17,12 @@ html {
 
 /* New book button*/
 
-.new-book {
+#add-button {
     height: 50px;
     width: 50px;
     border-radius: 50%;
-    background-color: paleturquoise;
+    border: 1px solid black;
+    background-color: rgba(24, 77, 104, 0.8);
     font-size: 40px;
     color: white;
 }
@@ -50,4 +51,72 @@ html {
     justify-content: space-between;
     width: 200px;
 }
+
+/* New book form*/
+
+input#title, #author, #pages{
+    width: 380px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#checkbox {
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+input#read {
+    height: 20px;
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#new-book-form {
+    display: none;
+    position: fixed; /*hide form*/
+    left: 40%; /*put it towards centre*/
+    background-color: rgb(118, 128, 128);
+    width: 400px;
+    height: 300px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#save, #close {
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+/* Library section which contains book information */
+
+#library {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 200px;
+    width: 300px;
+    background-color: rgba(24, 77, 104, 0.8);
+    border-radius: 5px;
+    color: white;
+    font-size: 22px;
+    padding-left: 5px;
+}
+
 
