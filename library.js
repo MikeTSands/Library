@@ -15,11 +15,25 @@ closeBtn.addEventListener("click", () => popUpForm.style.display = "none");
 
 //create book constructor 
 
+/*
 function Book(title, author, pages, read) {
 	this.title = title;
 	this.author = author;
 	this.pages = pages;
 	this.read = read;
+}
+*/
+
+//create class for constructor
+
+class Book {
+
+	constructor(title, author, pages, read) {
+		this.title = title;
+		this.author = author;
+		this.pages = pages;
+		this.read = read;
+	} 
 }
 
 //create library and function to add new books to it
@@ -106,7 +120,7 @@ function displayBooks() {
 
 displayBooks();
 
-//Function to count books for log.  Currently unable to count added books as they are not saved in myLibrary array
+//Function to count books for log.  Began working after switching to class rather than factory function.
 
 function displayLibraryLog() {
 	let count = 0;
